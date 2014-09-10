@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jquery.drag</title>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.drag.js"></script>
+<script>
+    $(function(){
+        $('.drag').draggable({
+            wrapperObj : '.js_drag_obj',
+            objX : 0,
+            objY : 200
+        });
+    });
+</script>
+<style>
+    .drag-wrapper {
+        width: 300px;
+        height: 800px;
+        border: 1px solid #000;
+    }
+    .drag {
+    }
+</style>
+</head>
+<body>
+    <div class="drag-wrapper js_drag_obj">
+        <img src="http://mirucho.me/dl/images/lppc/lp_pc_apply_download_btn_Android.png" class="drag">
+    </div>
+</body>
+</html>
