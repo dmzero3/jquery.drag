@@ -1,8 +1,7 @@
-jquery.rollover.js
+jquery.drag.js
 ===================
 
-画像ロールオーバー用のjQueryプラグインです。
-どこにでもありますが、自分の勉強用に。
+固定要素内でドラッグができるプラグインです。
 
 
 USAGE
@@ -11,13 +10,22 @@ USAGE
 jQuery本体の後にプラグインを読み込ませる
 ```
 <script src="jquery.js"></script>
-<script src="jquery.rollover.js"></script>
+<script src="jquery.drag.js"></script>
 ```
 
-rolloverを実行する
+下記を実行する
 ```
 $(function(){
-    $('img').rollover();
+    $('.drag').draggable();
 });
 ```
 
+OPTIONS
+-------------------
+
+option | description | default
+--- | --- | ---
+wrapperObj | 固定する要素 | .drag-wrapper-obj
+objX | ドラッグする要素のleft値 | 0
+objY | ドラッグする要素のtop値 | 0
+cursor | ドラッグ中のカーソルアイコン（CSS） | cursor

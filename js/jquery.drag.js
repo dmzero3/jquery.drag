@@ -10,7 +10,7 @@
 	$.fn.draggable = function(option){
 		
 		var defaults = {
-			wrapperObj : '#targetWrap',
+			wrapperObj : '.drag-wrapper-obj',
 			objX : 0,
 			objY : 0,
 			cursor: 'move'
